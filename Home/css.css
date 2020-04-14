@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: consolas;
+  touch-callout: none;
+  user-select: none;
+}
+
+.header {
+  color: gray;
+  position: fixed;
+  heigth: 50px;
+  max-height: 50px;
+  top: 0;
+  width: 100%;
+  animation: summon 2s linear 1;
+}
+
+.menu{
+  background-color: #37363d;
+  color: blue;
+  position: fixed;
+  heigth: 50px;
+  top: 50px;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: -44%;
+  width: 100%;
+  background-color: none;
+  color: gray;
+  text-align: left;
+  animation: loading 7s linear 1;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  font-size: 115%;
+}
+
+#sobral{
+  animation: cor1 4s infinite;
+}
+
+#m{
+  animation: cor2 4s infinite;
+}
+
+#logo:hover, #m:hover {
+  transform: scale(1.1);
+}
+
+#menu {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#centraliza {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#texto {
+  color: white;
+}
+
+@keyframes loading{
+  0% {
+    bottom: 50%;
+  }
+  50% {
+    bottom: 50%;
+  }
+  70% {
+    bottom: 0;
+  }
+}
+
+@keyframes summon{
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes cor1{
+  0% {
+    color: white;
+  }
+  50% {
+    color: gray;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes cor2{
+  0% {
+    color: gray;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: gray;
+  }
+}
